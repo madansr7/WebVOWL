@@ -15,7 +15,7 @@ module.exports = function ( graph ){
   var showLoadingDetails = false;
   var visibilityStatus = true;
   
-  var DEFAULT_JSON_NAME = "foaf"; // This file is loaded by default
+  var DEFAULT_JSON_NAME = "tripservice"; // This file is loaded by default
   var conversion_sessionId;
   
   /** variable defs **/
@@ -348,7 +348,6 @@ module.exports = function ( graph ){
     }
   };
   
-  
   loadingModule.from_FileUpload = function ( fileName ){
     loadingModule.setBusyMode();
     var filename = decodeURIComponent(fileName.slice("file=".length));
@@ -375,7 +374,6 @@ module.exports = function ( graph ){
       } else {
         filename = selectedFile.name;
       }
-
 
 // two options here
 //1] Direct Json Upload
@@ -542,7 +540,6 @@ module.exports = function ( graph ){
     }
   }
   
-  
   /** -- PARSE JSON CONTENT -- **/
   function parseOntologyContent( content ){
     
@@ -565,7 +562,6 @@ module.exports = function ( graph ){
     loadingWasSuccessFul = true;
   };
   
-  
   /** --- HELPER FUNCTIONS **/
   
   function identifyParameter( url ){
@@ -586,7 +582,6 @@ module.exports = function ( graph ){
     }
     return paramArray;
   }
-  
   
   function loadGraphOptions( parameterArray ){
     var optString = "opts=";
@@ -652,7 +647,6 @@ module.exports = function ( graph ){
     }
   }
   
-  
   function identifyOntologyLoadingMethod( url ){
     var iriKey = "iri=";
     var urlKey = "url=";
@@ -674,5 +668,3 @@ module.exports = function ( graph ){
   return loadingModule;
 }
 ;
-
-
