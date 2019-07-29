@@ -31,7 +31,6 @@ module.exports = function ( graph ){
     }
   };
   
-  
   ontologyMenu.reloadCachedOntology = function (){
     ontologyMenu.clearCachedVersion();
     graph.clearGraphData();
@@ -103,7 +102,6 @@ module.exports = function ( graph ){
     setupUriListener();
     loadingModule.setOntologyMenu(ontologyMenu);
   };
-  
   
   function setupUriListener(){
     // reload ontology when hash parameter gets changed manually
@@ -187,7 +185,6 @@ module.exports = function ( graph ){
     d3.select("#currentLoadingStep").node().innerHTML = msg;
     loadingModule.scrollDownDetails();
   }
-  
   
   function setupConverterButtons(){
     var iriConverterButton = d3.select("#iri-converter-button");
@@ -307,33 +304,33 @@ module.exports = function ( graph ){
   };
   
   function getLoadingStatusOnceCallBacked( callback, parameter ){
-    d3.xhr("loadingStatus?sessionId=" + conversion_sessionId, "application/text", function ( error, request ){
-      if ( error ) {
-        console.log("ontologyMenu getLoadingStatusOnceCallBacked throws error");
-        console.log("---------Error -----------");
-        console.log(error);
-        console.log("---------Request -----------");
-        console.log(request);
-      }
-      setLoadingStatusInfo(request.responseText);
+    // d3.xhr("loadingStatus?sessionId=" + conversion_sessionId, "application/text", function ( error, request ){
+    //   if ( error ) {
+    //     console.log("ontologyMenu getLoadingStatusOnceCallBacked throws error");
+    //     console.log("---------Error -----------");
+    //     console.log(error);
+    //     console.log("---------Request -----------");
+    //     console.log(request);
+    //   }
+      setLoadingStatusInfo("");
       callback(parameter);
-    });
+    // });
   }
   
   function getLoadingStatusTimeLooped(){
-    d3.xhr("loadingStatus?sessionId=" + conversion_sessionId, "application/text", function ( error, request ){
-      if ( error ) {
-        console.log("ontologyMenu getLoadingStatusTimeLooped throws error");
-        console.log("---------Error -----------");
-        console.log(error);
-        console.log("---------Request -----------");
-        console.log(request);
-      }
+    // d3.xhr("loadingStatus?sessionId=" + conversion_sessionId, "application/text", function ( error, request ){
+    //   if ( error ) {
+    //     console.log("ontologyMenu getLoadingStatusTimeLooped throws error");
+    //     console.log("---------Error -----------");
+    //     console.log(error);
+    //     console.log("---------Request -----------");
+    //     console.log(request);
+    //   }
       if ( stopTimer === false ) {
-        setLoadingStatusInfo(request.responseText);
+        setLoadingStatusInfo("");
         timedLoadingStatusLogger();
       }
-    });
+    // });
   }
   
   function timedLoadingStatusLogger(){
@@ -382,7 +379,6 @@ module.exports = function ( graph ){
       }
     });
   };
-  
   
   ontologyMenu.callbackLoad_Ontology_From_DirectInput = function ( text, parameter ){
     var input = text;
@@ -490,7 +486,6 @@ module.exports = function ( graph ){
     graph.handleOnLoadingError();
     ontologyMenu.conversionFinished();
   }
-  
   
   function callbackFromIRI_URL_ERROR( parameter ){
     var error = parameter[0];

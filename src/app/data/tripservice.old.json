@@ -1,0 +1,2241 @@
+{
+  "_comment": "Empty ontology for WebVOWL Editor [Additional Information added by WebVOWL Exporter Version: 1.1.4]",
+  "header": {
+    "languages": [
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/2000/01/rdf-schema"
+    ],
+    "iri": "http://visualdataweb.org/ODataOntology/",
+    "title": {
+      "en": "OData Ontology"
+    },
+    "description": {
+      "en": "OData ontology"
+    }
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": 0.79,
+      "translation": [
+        82.35,
+        74.87
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "2"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-UserName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FirstName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-LastName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-MiddleName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Gender",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Age",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Emails",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-AddressInfo",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-HomeAddress",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FavoriteFeature",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Features",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-AirlineCode",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-Name",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-Name",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IcaoCode",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IataCode",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-Location",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-TripId",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-ShareId",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Name",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Budget",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Description",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Tags",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-StartsAt",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-EndsAt",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-PlanItemId",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-ConfirmationCode",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-StartsAt",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-EndsAt",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-Duration",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-OccursAt",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-Description",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportation",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportation-SeatNumber",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-FlightNumber",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee-Cost",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager",
+      "type": "owl:Class"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-Budget",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-BossOffice",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "graphRoot",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/Person",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Person",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-UserName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FirstName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-LastName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-MiddleName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Gender",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Age",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Emails",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-AddressInfo",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-HomeAddress",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FavoriteFeature",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Features",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/Airline",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Airline",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-AirlineCode",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-Name",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/Airport",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Airport",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-Name",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IcaoCode",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IataCode",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-Location",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "iri": "http://visualdataweb.org/newOntology/Trip",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Trip",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-TripId",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-ShareId",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Name",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Budget",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Description",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Tags",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-StartsAt",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-EndsAt",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem",
+      "iri": "http://visualdataweb.org/newOntology/PlanItem",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "PlanItem",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-PlanItemId",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-ConfirmationCode",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-StartsAt",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-EndsAt",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-Duration",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event",
+      "iri": "http://visualdataweb.org/newOntology/Event",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Event",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-OccursAt",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-Description",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportation",
+      "iri": "http://visualdataweb.org/newOntology/PublicTransportation",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "PublicTransportation",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportation-SeatNumber",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight",
+      "iri": "http://visualdataweb.org/newOntology/Flight",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Flight",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-FlightNumber",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee",
+      "iri": "http://visualdataweb.org/newOntology/Employee",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Employee",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee-Cost",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager",
+      "iri": "http://visualdataweb.org/newOntology/Manager",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Manager",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-Budget",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-BossOffice",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "graphRoot",
+      "iri": "http://visualdataweb.org/ODataOnotology/graph",
+      "baseIri": "http://visualdataweb.ODataOnotology",
+      "label": "graph",
+      "attributes": [
+        "external"
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-UserNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FirstNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-LastNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-MiddleNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-GenderProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-AgeProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-EmailsProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-AddressInfoProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-HomeAddressProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FavoriteFeatureProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FeaturesProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Friends-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-BestFriend-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Trips-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-AirlineCodeProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-NameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-NameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IcaoCodeProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IataCodeProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-LocationProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-TripIdProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-ShareIdProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-NameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-BudgetProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-DescriptionProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-TagsProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-StartsAtProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-EndsAtProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-PlanItems-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-PlanItemIdProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-ConfirmationCodeProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-StartsAtProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-EndsAtProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-DurationProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Eventsubclass",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-OccursAtProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-DescriptionProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportationsubclass",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportation-SeatNumberProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flightsubclass",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-FlightNumberProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-Airline-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-From-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-To-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employeesubclass",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee-CostProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee-Peers-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Managersubclass",
+      "type": "rdfs:subClassOf"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-BudgetProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-BossOfficeProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-DirectReports-NP",
+      "type": "owl:ObjectProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-UserNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "UserName",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-UserName",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-UserName"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FirstNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "FirstName",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FirstName",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FirstName"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-LastNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "LastName",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-LastName",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-LastName"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-MiddleNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "MiddleName",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-MiddleName",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-MiddleName"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-GenderProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Gender",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Gender",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Gender"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-AgeProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Age",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Age",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Age"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-EmailsProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Emails",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Emails",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Emails"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-AddressInfoProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "AddressInfo",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-AddressInfo",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-AddressInfo"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-HomeAddressProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "HomeAddress",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-HomeAddress",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-HomeAddress"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FavoriteFeatureProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "FavoriteFeature",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FavoriteFeature",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FavoriteFeature"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-FeaturesProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Features",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Features",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Features"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Friends-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Friends",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Friends"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-BestFriend-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "BestFriend",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-BestFriend"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Trips-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Trips",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person-Trips"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-AirlineCodeProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "AirlineCode",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-AirlineCode",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-AirlineCode"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-NameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Name",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-Name",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline-Name"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-NameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Name",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-Name",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-Name"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IcaoCodeProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "IcaoCode",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IcaoCode",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IcaoCode"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IataCodeProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "IataCode",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IataCode",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-IataCode"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-LocationProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Location",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-Location",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport-Location"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-TripIdProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "TripId",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-TripId",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-TripId"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-ShareIdProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ShareId",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-ShareId",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-ShareId"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-NameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Name",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Name",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Name"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-BudgetProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Budget",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Budget",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Budget"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-DescriptionProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Description",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Description",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Description"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-TagsProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Tags",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Tags",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-Tags"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-StartsAtProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "StartsAt",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-StartsAt",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-StartsAt"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-EndsAtProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "EndsAt",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-EndsAt",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-EndsAt"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-PlanItems-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "PlanItems",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Trip-PlanItems"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-PlanItemIdProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "PlanItemId",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-PlanItemId",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-PlanItemId"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-ConfirmationCodeProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ConfirmationCode",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-ConfirmationCode",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-ConfirmationCode"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-StartsAtProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "StartsAt",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-StartsAt",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-StartsAt"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-EndsAtProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "EndsAt",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-EndsAt",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-EndsAt"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-DurationProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Duration",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-Duration",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem-Duration"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Eventsubclass",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "subclass of",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-OccursAtProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "OccursAt",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-OccursAt",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-OccursAt"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-DescriptionProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Description",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-Description",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Event-Description"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportationsubclass",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "subclass of",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportation",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PlanItem",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportation-SeatNumberProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "SeatNumber",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportation",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportation-SeatNumber",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportation-SeatNumber"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flightsubclass",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "subclass of",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.PublicTransportation",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-FlightNumberProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "FlightNumber",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-FlightNumber",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-FlightNumber"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-Airline-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Airline",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-Airline"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-From-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "From",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-From"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-To-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "To",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Flight-To"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employeesubclass",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "subclass of",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee-CostProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Cost",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee-Cost",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee-Cost"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee-Peers-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Peers",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Employee-Peers"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Managersubclass",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "subclass of",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#subClassOf"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-BudgetProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Budget",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-Budget",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-Budget"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-BossOfficeProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "BossOffice",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-BossOffice",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-BossOffice"
+    },
+    {
+      "id": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-DirectReports-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "DirectReports",
+      "domain": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/Microsoft.OData.Service.Sample.TrippinInMemory.Models.Manager-DirectReports"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(People)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airlines)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airline"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(Airports)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Airport"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "collection(NewComePeople)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    },
+    {
+      "id": "graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "singleton(Me)",
+      "domain": "graphRoot",
+      "range": "Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person",
+      "iri": "http://visualdataweb.org/newOntology/graph-Microsoft.OData.Service.Sample.TrippinInMemory.Models.Person"
+    }
+  ]
+}

@@ -1,0 +1,3415 @@
+{
+  "_comment": "Empty ontology for WebVOWL Editor [Additional Information added by WebVOWL Exporter Version: 1.1.4]",
+  "header": {
+    "languages": [
+      "en"
+    ],
+    "baseIris": [
+      "http://www.w3.org/2000/01/rdf-schema"
+    ],
+    "iri": "http://visualdataweb.org/ODataOntology/",
+    "title": {
+      "en": "OData Ontology"
+    },
+    "description": {
+      "en": "OData ontology"
+    }
+  },
+  "namespace": [],
+  "settings": {
+    "global": {
+      "zoom": 0.79,
+      "translation": [
+        82.35,
+        74.87
+      ],
+      "paused": false
+    },
+    "gravity": {
+      "classDistance": 200,
+      "datatypeDistance": 120
+    },
+    "filter": {
+      "checkBox": [
+        {
+          "id": "datatypeFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "objectPropertyFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "subclassFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "disjointFilterCheckbox",
+          "checked": true
+        },
+        {
+          "id": "setoperatorFilterCheckbox",
+          "checked": false
+        }
+      ],
+      "degreeSliderValue": "2"
+    },
+    "modes": {
+      "checkBox": [
+        {
+          "id": "pickandpinModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "nodescalingModuleCheckbox",
+          "checked": true
+        },
+        {
+          "id": "compactnotationModuleCheckbox",
+          "checked": false
+        },
+        {
+          "id": "colorexternalsModuleCheckbox",
+          "checked": true
+        }
+      ],
+      "colorSwitchState": false
+    }
+  },
+  "class": [
+    {
+      "id": "odata_webapi_northwind.Employee",
+      "type": "owl:Class"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-EmployeeID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-LastName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-FirstName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Title",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-TitleOfCourtesy",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-BirthDate",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-HireDate",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Address",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-City",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Region",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-PostalCode",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Country",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-HomePhone",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Extension",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Photo",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Notes",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-ReportsTo",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-PhotoPath",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Product",
+      "type": "owl:Class"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-ProductID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-ProductName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-SupplierID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-CategoryID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-QuantityPerUnit",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-UnitPrice",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-UnitsInStock",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-UnitsOnOrder",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-ReorderLevel",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-Discontinued",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-Order_Details",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Region",
+      "type": "owl:Class"
+    },
+    {
+      "id": "odata_webapi_northwind.Region-RegionID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Region-RegionDescription",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier",
+      "type": "owl:Class"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-SupplierID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-CompanyName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-ContactName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-ContactTitle",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-Address",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-City",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-Region",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-PostalCode",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-Country",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-Phone",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-Fax",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-HomePage",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Category",
+      "type": "owl:Class"
+    },
+    {
+      "id": "odata_webapi_northwind.Category-CategoryID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Category-CategoryName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Category-Description",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Category-Picture",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer",
+      "type": "owl:Class"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-CustomerID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-CompanyName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-ContactName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-ContactTitle",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-Address",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-City",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-Region",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-PostalCode",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-Country",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-Phone",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-Fax",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-CustomerDemographics",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper",
+      "type": "owl:Class"
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper-ShipperID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper-CompanyName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper-Phone",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Territory",
+      "type": "owl:Class"
+    },
+    {
+      "id": "odata_webapi_northwind.Territory-TerritoryID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Territory-TerritoryDescription",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Territory-RegionID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order",
+      "type": "owl:Class"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-OrderID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-CustomerID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-EmployeeID",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-OrderDate",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-RequiredDate",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShippedDate",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipVia",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-Freight",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipName",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipAddress",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipCity",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipRegion",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipPostalCode",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipCountry",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-Order_Details",
+      "type": "rdfs:Datatype"
+    },
+    {
+      "id": "serviceRoot",
+      "type": "owl:Class"
+    }
+  ],
+  "classAttribute": [
+    {
+      "id": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/Employee",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Employee",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-EmployeeID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-LastName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-FirstName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Title",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-TitleOfCourtesy",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-BirthDate",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-HireDate",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Address",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-City",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Region",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-PostalCode",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Country",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-HomePhone",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Extension",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Photo",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Notes",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-ReportsTo",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-PhotoPath",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/Product",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Product",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product-ProductID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product-ProductName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product-SupplierID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product-CategoryID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product-QuantityPerUnit",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product-UnitPrice",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product-UnitsInStock",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product-UnitsOnOrder",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product-ReorderLevel",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product-Discontinued",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Product-Order_Details",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/Region",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Region",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Region-RegionID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Region-RegionDescription",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Supplier",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-SupplierID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-CompanyName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-ContactName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-ContactTitle",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-Address",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-City",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-Region",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-PostalCode",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-Country",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-Phone",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-Fax",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-HomePage",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/Category",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Category",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Category-CategoryID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Category-CategoryName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Category-Description",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Category-Picture",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/Customer",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Customer",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-CustomerID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-CompanyName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-ContactName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-ContactTitle",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-Address",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-City",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-Region",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-PostalCode",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-Country",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-Phone",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-Fax",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-CustomerDemographics",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Shipper",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper-ShipperID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper-CompanyName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper-Phone",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/Territory",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Territory",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Territory-TerritoryID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Territory-TerritoryDescription",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Territory-RegionID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order",
+      "iri": "http://visualdataweb.org/newOntology/Order",
+      "baseIri": "http://visualdataweb.org/newOntology",
+      "label": "Order",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-OrderID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-CustomerID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-EmployeeID",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-OrderDate",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-RequiredDate",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShippedDate",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipVia",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-Freight",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipName",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipAddress",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipCity",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipRegion",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipPostalCode",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipCountry",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "odata_webapi_northwind.Order-Order_Details",
+      "iri": "http://www.w3.org/2000/01/rdf-schema#Datatype",
+      "baseIri": "http://www.w3.org/2001/XMLSchema#",
+      "label": "string",
+      "attributes": null
+    },
+    {
+      "id": "serviceRoot",
+      "iri": "http://visualdataweb.org/ODataOnotology/serviceRoot",
+      "baseIri": "http://visualdataweb.ODataOnotology",
+      "label": "Container",
+      "attributes": [
+        "external"
+      ]
+    }
+  ],
+  "property": [
+    {
+      "id": "odata_webapi_northwind.Employee-EmployeeIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-LastNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-FirstNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-TitleProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-TitleOfCourtesyProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-BirthDateProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-HireDateProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-AddressProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-CityProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-RegionProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-PostalCodeProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-CountryProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-HomePhoneProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-ExtensionProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-PhotoProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-NotesProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-ReportsToProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-PhotoPathProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Employees1-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Employee1-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Orders-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Employee-Territories-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-ProductIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-ProductNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-SupplierIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-CategoryIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-QuantityPerUnitProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-UnitPriceProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-UnitsInStockProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-UnitsOnOrderProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-ReorderLevelProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-DiscontinuedProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-Order_DetailsProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-Category-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Product-Supplier-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Region-RegionIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Region-RegionDescriptionProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Region-Territories-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-SupplierIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-CompanyNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-ContactNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-ContactTitleProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-AddressProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-CityProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-RegionProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-PostalCodeProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-CountryProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-PhoneProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-FaxProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-HomePageProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Supplier-Products-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Category-CategoryIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Category-CategoryNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Category-DescriptionProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Category-PictureProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Category-Products-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-CustomerIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-CompanyNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-ContactNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-ContactTitleProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-AddressProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-CityProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-RegionProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-PostalCodeProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-CountryProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-PhoneProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-FaxProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-CustomerDemographicsProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Customer-Orders-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper-ShipperIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper-CompanyNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper-PhoneProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Shipper-Orders-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Territory-TerritoryIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Territory-TerritoryDescriptionProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Territory-RegionIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Territory-Region-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Territory-Employees-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-OrderIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-CustomerIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-EmployeeIDProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-OrderDateProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-RequiredDateProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShippedDateProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipViaProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-FreightProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipNameProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipAddressProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipCityProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipRegionProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipPostalCodeProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-ShipCountryProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-Order_DetailsProperty",
+      "type": "owl:DatatypeProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-Customer-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-Employee-NP",
+      "type": "owl:ObjectProperty"
+    },
+    {
+      "id": "odata_webapi_northwind.Order-Shipper-NP",
+      "type": "owl:ObjectProperty"
+    }
+  ],
+  "propertyAttribute": [
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-EmployeeIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "EmployeeID",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-EmployeeID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-EmployeeID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-LastNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "LastName",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-LastName",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-LastName"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-FirstNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "FirstName",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-FirstName",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-FirstName"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-TitleProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Title",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-Title",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-Title"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-TitleOfCourtesyProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "TitleOfCourtesy",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-TitleOfCourtesy",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-TitleOfCourtesy"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-BirthDateProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "BirthDate",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-BirthDate",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-BirthDate"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-HireDateProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "HireDate",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-HireDate",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-HireDate"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-AddressProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Address",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-Address",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-Address"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-CityProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "City",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-City",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-City"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-RegionProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Region",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-Region",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-Region"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-PostalCodeProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "PostalCode",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-PostalCode",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-PostalCode"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-CountryProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Country",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-Country",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-Country"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-HomePhoneProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "HomePhone",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-HomePhone",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-HomePhone"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-ExtensionProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Extension",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-Extension",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-Extension"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-PhotoProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Photo",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-Photo",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-Photo"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-NotesProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Notes",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-Notes",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-Notes"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-ReportsToProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ReportsTo",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-ReportsTo",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-ReportsTo"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-PhotoPathProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "PhotoPath",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee-PhotoPath",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-PhotoPath"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Employee-Employees1-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees1",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-Employees1"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Employee-Employee1-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employee1",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-Employee1"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Employee-Orders-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Orders",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Order",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-Orders"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Employee-Territories-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "odata_webapi_northwind.Employee",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Employee-Territories"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-ProductIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ProductID",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Product-ProductID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-ProductID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-ProductNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ProductName",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Product-ProductName",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-ProductName"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-SupplierIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "SupplierID",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Product-SupplierID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-SupplierID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-CategoryIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "CategoryID",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Product-CategoryID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-CategoryID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-QuantityPerUnitProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "QuantityPerUnit",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Product-QuantityPerUnit",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-QuantityPerUnit"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-UnitPriceProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "UnitPrice",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Product-UnitPrice",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-UnitPrice"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-UnitsInStockProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "UnitsInStock",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Product-UnitsInStock",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-UnitsInStock"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-UnitsOnOrderProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "UnitsOnOrder",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Product-UnitsOnOrder",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-UnitsOnOrder"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-ReorderLevelProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ReorderLevel",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Product-ReorderLevel",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-ReorderLevel"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-DiscontinuedProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Discontinued",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Product-Discontinued",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-Discontinued"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Product-Order_DetailsProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Order_Details",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Product-Order_Details",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-Order_Details"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-Category-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Category",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-Category"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Product-Supplier-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Supplier",
+      "domain": "odata_webapi_northwind.Product",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Product-Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Region-RegionIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "RegionID",
+      "domain": "odata_webapi_northwind.Region",
+      "range": "odata_webapi_northwind.Region-RegionID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Region-RegionID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Region-RegionDescriptionProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "RegionDescription",
+      "domain": "odata_webapi_northwind.Region",
+      "range": "odata_webapi_northwind.Region-RegionDescription",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Region-RegionDescription"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Region-Territories-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "odata_webapi_northwind.Region",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Region-Territories"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-SupplierIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "SupplierID",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-SupplierID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-SupplierID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-CompanyNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "CompanyName",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-CompanyName",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-CompanyName"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-ContactNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ContactName",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-ContactName",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-ContactName"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-ContactTitleProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ContactTitle",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-ContactTitle",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-ContactTitle"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-AddressProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Address",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-Address",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-Address"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-CityProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "City",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-City",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-City"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-RegionProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Region",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-Region",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-Region"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-PostalCodeProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "PostalCode",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-PostalCode",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-PostalCode"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-CountryProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Country",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-Country",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-Country"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-PhoneProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Phone",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-Phone",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-Phone"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-FaxProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Fax",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-Fax",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-Fax"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Supplier-HomePageProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "HomePage",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Supplier-HomePage",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-HomePage"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Supplier-Products-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "odata_webapi_northwind.Supplier",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Supplier-Products"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Category-CategoryIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "CategoryID",
+      "domain": "odata_webapi_northwind.Category",
+      "range": "odata_webapi_northwind.Category-CategoryID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Category-CategoryID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Category-CategoryNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "CategoryName",
+      "domain": "odata_webapi_northwind.Category",
+      "range": "odata_webapi_northwind.Category-CategoryName",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Category-CategoryName"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Category-DescriptionProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Description",
+      "domain": "odata_webapi_northwind.Category",
+      "range": "odata_webapi_northwind.Category-Description",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Category-Description"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Category-PictureProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Picture",
+      "domain": "odata_webapi_northwind.Category",
+      "range": "odata_webapi_northwind.Category-Picture",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Category-Picture"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Category-Products-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "odata_webapi_northwind.Category",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Category-Products"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Customer-CustomerIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "CustomerID",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-CustomerID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-CustomerID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Customer-CompanyNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "CompanyName",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-CompanyName",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-CompanyName"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Customer-ContactNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ContactName",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-ContactName",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-ContactName"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Customer-ContactTitleProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ContactTitle",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-ContactTitle",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-ContactTitle"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Customer-AddressProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Address",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-Address",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-Address"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Customer-CityProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "City",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-City",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-City"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Customer-RegionProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Region",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-Region",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-Region"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Customer-PostalCodeProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "PostalCode",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-PostalCode",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-PostalCode"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Customer-CountryProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Country",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-Country",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-Country"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Customer-PhoneProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Phone",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-Phone",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-Phone"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Customer-FaxProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Fax",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-Fax",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-Fax"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Customer-CustomerDemographicsProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "CustomerDemographics",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Customer-CustomerDemographics",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-CustomerDemographics"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Customer-Orders-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Orders",
+      "domain": "odata_webapi_northwind.Customer",
+      "range": "odata_webapi_northwind.Order",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Customer-Orders"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Shipper-ShipperIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ShipperID",
+      "domain": "odata_webapi_northwind.Shipper",
+      "range": "odata_webapi_northwind.Shipper-ShipperID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Shipper-ShipperID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Shipper-CompanyNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "CompanyName",
+      "domain": "odata_webapi_northwind.Shipper",
+      "range": "odata_webapi_northwind.Shipper-CompanyName",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Shipper-CompanyName"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Shipper-PhoneProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Phone",
+      "domain": "odata_webapi_northwind.Shipper",
+      "range": "odata_webapi_northwind.Shipper-Phone",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Shipper-Phone"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Shipper-Orders-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Orders",
+      "domain": "odata_webapi_northwind.Shipper",
+      "range": "odata_webapi_northwind.Order",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Shipper-Orders"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Territory-TerritoryIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "TerritoryID",
+      "domain": "odata_webapi_northwind.Territory",
+      "range": "odata_webapi_northwind.Territory-TerritoryID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Territory-TerritoryID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Territory-TerritoryDescriptionProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "TerritoryDescription",
+      "domain": "odata_webapi_northwind.Territory",
+      "range": "odata_webapi_northwind.Territory-TerritoryDescription",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Territory-TerritoryDescription"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Territory-RegionIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "RegionID",
+      "domain": "odata_webapi_northwind.Territory",
+      "range": "odata_webapi_northwind.Territory-RegionID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Territory-RegionID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Territory-Region-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Region",
+      "domain": "odata_webapi_northwind.Territory",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Territory-Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Territory-Employees-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "odata_webapi_northwind.Territory",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Territory-Employees"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-OrderIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "OrderID",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-OrderID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-OrderID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-CustomerIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "CustomerID",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-CustomerID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-CustomerID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-EmployeeIDProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "EmployeeID",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-EmployeeID",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-EmployeeID"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-OrderDateProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "OrderDate",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-OrderDate",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-OrderDate"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-RequiredDateProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "RequiredDate",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-RequiredDate",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-RequiredDate"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-ShippedDateProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ShippedDate",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-ShippedDate",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-ShippedDate"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-ShipViaProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ShipVia",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-ShipVia",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-ShipVia"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-FreightProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Freight",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-Freight",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-Freight"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-ShipNameProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ShipName",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-ShipName",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-ShipName"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-ShipAddressProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ShipAddress",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-ShipAddress",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-ShipAddress"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-ShipCityProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ShipCity",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-ShipCity",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-ShipCity"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-ShipRegionProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ShipRegion",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-ShipRegion",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-ShipRegion"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-ShipPostalCodeProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ShipPostalCode",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-ShipPostalCode",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-ShipPostalCode"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-ShipCountryProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "ShipCountry",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-ShipCountry",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-ShipCountry"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "odata_webapi_northwind.Order-Order_DetailsProperty",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Order_Details",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Order-Order_Details",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-Order_Details"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-Customer-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customer",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-Customer"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-Employee-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employee",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-Employee"
+    },
+    {
+      "minCardinality": null,
+      "maxCardinality": null,
+      "id": "odata_webapi_northwind.Order-Shipper-NP",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shipper",
+      "domain": "odata_webapi_northwind.Order",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/odata_webapi_northwind.Order-Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Employee",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Employees",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Employee",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Employee"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Product",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Products",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Product",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Product"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Region",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Regions",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Region",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Region"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Supplier",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Suppliers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Supplier",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Supplier"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Category",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Categories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Category",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Category"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Customer",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Customers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Customer",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Customer"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Shipper",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Shippers",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Shipper",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Shipper"
+    },
+    {
+      "minCardinality": "1",
+      "maxCardinality": "+",
+      "id": "graph-collectionodata_webapi_northwind.Territory",
+      "baseIri": "http://visualdataweb.org/newOntology/",
+      "label": "Territories",
+      "domain": "serviceRoot",
+      "range": "odata_webapi_northwind.Territory",
+      "iri": "http://visualdataweb.org/newOntology/graph-collectionodata_webapi_northwind.Territory"
+    }
+  ]
+}
